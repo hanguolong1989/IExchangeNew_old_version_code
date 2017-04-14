@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="HGAutoCheckCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="93"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="autoCheck_info.png" translatesAutoresizingMaskIntoConstraints="NO" id="Usd-gB-Z4t">
+                    <rect key="frame" x="12" y="2" width="89" height="89"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Usd-gB-Z4t" secondAttribute="height" multiplier="1:1" id="Tad-oR-jk3"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fyk-bJ-Fe4">
+                    <rect key="frame" x="12" y="92" width="333" height="1"/>
+                    <color key="backgroundColor" red="0.99552136659622192" green="0.0048771640285849571" blue="0.23984220623970032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="yHf-Sl-H3g"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机基本信息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvy-aQ-u3h">
+                    <rect key="frame" x="115" y="2" width="238" height="89"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Fyk-bJ-Fe4" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="12" id="2rk-iS-RoL"/>
+                <constraint firstAttribute="trailing" secondItem="Uvy-aQ-u3h" secondAttribute="trailing" constant="4" id="8tf-oU-jqw"/>
+                <constraint firstItem="Uvy-aQ-u3h" firstAttribute="centerY" secondItem="Usd-gB-Z4t" secondAttribute="centerY" id="Byj-34-FU7"/>
+                <constraint firstItem="Uvy-aQ-u3h" firstAttribute="leading" secondItem="Usd-gB-Z4t" secondAttribute="trailing" constant="14" id="Kec-9G-Xbe"/>
+                <constraint firstItem="Usd-gB-Z4t" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="Vmh-1f-BaE"/>
+                <constraint firstAttribute="trailing" secondItem="Fyk-bJ-Fe4" secondAttribute="trailing" constant="12" id="Wif-gv-LKh"/>
+                <constraint firstItem="Fyk-bJ-Fe4" firstAttribute="top" secondItem="Usd-gB-Z4t" secondAttribute="bottom" constant="1" id="Yhe-Cw-oFW"/>
+                <constraint firstItem="Usd-gB-Z4t" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="12" id="eOi-6g-arR"/>
+                <constraint firstItem="Uvy-aQ-u3h" firstAttribute="height" secondItem="Usd-gB-Z4t" secondAttribute="height" id="xDg-ra-ffx"/>
+                <constraint firstAttribute="bottom" secondItem="Fyk-bJ-Fe4" secondAttribute="bottom" id="xRI-VK-nUJ"/>
+            </constraints>
+            <connections>
+                <outlet property="iconImageView" destination="Usd-gB-Z4t" id="y9T-Aq-8fc"/>
+                <outlet property="lineLabel" destination="Fyk-bJ-Fe4" id="6tt-tv-Zgt"/>
+                <outlet property="titleLabel" destination="Uvy-aQ-u3h" id="XCR-P8-UbZ"/>
+            </connections>
+            <point key="canvasLocation" x="-35.5" y="-38.5"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="autoCheck_info.png" width="52" height="52"/>
+    </resources>
+</document>
